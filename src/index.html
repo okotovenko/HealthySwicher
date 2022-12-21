@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Healthy swicher"
+})
+
+<body>
+	<svg width="0" height="0">
+		<filter id="filter">
+			<feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="6" />
+			<feDisplacementMap in="SourceGraphic" scale="100" />
+		</filter>
+	</svg>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__favorite favorite">
+				<div class="favorite__background">
+					<img src="@img/favorite/background.jpg" alt="background">
+				</div>
+				<div class="favorite__container">
+					<h1 data-title class="favorite__title">
+						<span>Your </span><b>favourite </b><b>food</b><br><span>delivered </span><b>hot </b><b>& </b><b>
+							fresh</b>
+					</h1>
+					<div data-anim class="favorite__text text">HEALTHY SWITCHER chefs do all the prep work, like peeling,
+						chopping &
+						marinating, so you can cook a fresh homemade dinner in just 15 minutes.</div>
+					<div data-anim class="favorite__order">
+						<div class="button">
+							<a href="#">Order Now</a>
+							<div class="back"></div>
+						</div>
+					</div>
+					<div class="favorite__items items">
+						<div data-anim class="items__item">
+							<div class="items__top _icon-clock"></div>
+							<div class="items__center">Today 10:00 am - 7:00 pm</div>
+							<div class="items__bottom">Working hours</div>
+						</div>
+						<div data-anim class="items__item">
+							<div class="items__top _icon-near"></div>
+							<div class="items__center">Velyka Vasylkivska 100</div>
+							<div class="items__bottom">Get Directions</div>
+						</div>
+						<div data-anim class="items__item">
+							<div class="items__top _icon-call"></div>
+							<a class="items__center" href="tel: +38 (063)833 24 15">+38 (063)833 24 15</a>
+							<div class="items__bottom">Call Online</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 data-watch-threshold="0.5" data-watch-once data-watch="titleAnim" class="about__title title">
+						<b>a</b><b>b</b><b>o</b><b>u</b><b>t</b>
+						<div data-watch-threshold="0.5" data-watch-once data-watch="titleAnim"
+							class="about__subtitle subtitle"><span>The</span> <span>Basics</span>
+							<span>Of</span> <span>Healthy</span> <span>Food</span>
+						</div>
+					</h2>
+					<div data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="about__text text">
+						<p>
+							In aliqua
+							ea ullamco ad est ex non deserunt nulla. Consectetur sint ea
+							aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse
+							aliquip.
+						</p>
+					</div>
+					<div class="about__slider-box">
+						<div class="about__slider swiper">
+							<div class="about__wrapper swiper-wrapper">
+								<div class="about__slide swiper-slide">
+									<img src="@img/about/01.jpg" alt="image">
+								</div>
+								<div class="about__slide swiper-slide">
+									<img src="@img/about/02.jpg" alt="image">
+								</div>
+								<div class="about__slide swiper-slide">
+									<img src="@img/about/02.jpg" alt="image">
+								</div>
+								<div class="about__slide swiper-slide">
+									<img src="@img/about/01.jpg" alt="image">
+								</div>
+							</div>
+						</div>
+						<button type="button" class="_icon-arrow-prev _icon-arrow"></button>
+						<button type="button" class="_icon-arrow-next _icon-arrow"></button>
+					</div>
+				</div>
+			</section>
+			<section class="page__work work">
+				<div class="work__container">
+					<h2 data-watch-threshold="0.5" data-watch-once data-watch="titleAnim" class="work__title title">
+						<b>w</b><b>o</b><b>r</b><b>k</b>
+						<div data-watch-threshold="0.5" data-watch-once data-watch="titleAnim"
+							class="work__subtitle subtitle"><span>How</span> <span>It</span>
+							<span>Works</span>
+						</div>
+						<div class="work__line line"></div>
+					</h2>
+					<div class="work__items">
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="work__box">
+							<a href="#" class="work__item item-work">
+								<div class="item-work__title">Pick Meals
+									<div class="item-work__line line"></div>
+								</div>
+								<div class="item-work__text text-small">Choose your meals from our diverse weekly menu. Find
+									gluten or dairy free, low carb & veggie options.</div>
+							</a>
+							<div class="back"></div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="work__box">
+							<a href="#" class="work__item item-work">
+								<div class="item-work__title">Choose How Often
+									<div class="item-work__line line"></div>
+								</div>
+								<div class="item-work__text text-small">Our team of chefs do the prep work - no more chopping,
+									measuring, or sink full of dishes!</div>
+							</a>
+							<div class="back"></div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="work__box">
+							<a href="#" class="work__item item-work">
+								<div class="item-work__title">Fast Deliveries
+									<div class="item-work__line line"></div>
+								</div>
+								<div class="item-work__text text-small">Your freshly prepped 15-min dinner kits arrive on your
+									doorstep in a refrigerated box.</div>
+							</a>
+							<div class="back"></div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="work__box">
+							<a href="#" class="work__item item-work">
+								<div class="item-work__title">Tasty Meals
+									<div class="item-work__line line"></div>
+								</div>
+								<div class="item-work__text text-small">Gobble makes cooking fast, so you have more time to
+									unwind
+									and be with family.</div>
+							</a>
+							<div class="back"></div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__dishes dishes">
+				<div class="dishes__container">
+					<h2 data-watch-threshold="0.5" data-watch-once data-watch="titleAnim" class="dishes__title title">
+						<b>d</b><b>i</b><b>s</b><b>h</b><b>e</b><b>s</b>
+						<div data-watch-threshold="0.5" data-watch-once data-watch="titleAnim"
+							class="dishes__subtitle subtitle"><span>Dish</span> <span>Of</span>
+							<span>The</span> <span>Day</span>
+						</div>
+						<div class="dishes__line line"></div>
+					</h2>
+					<div class="dishes__items">
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="dishes__item item-dishes">
+							<div class="item-dishes__top">
+								<div class="item-dishes__img-ibg">
+									<img src="@img/dishes/01.jpg" alt="Image">
+								</div>
+								<a href="#" class="dishes__share _icon-share"></a>
+							</div>
+							<div class="item-dishes__bottom">
+								<div class="item-dishes__title">Featured Meal</div>
+								<div class="item-dishes__subtitle">Served with french fries + drink</div>
+								<div class="item-dishes__text text-small">Choice of: Coke, Fanta, Sprite, Upgrade to large
+									fries, Add whopper patty, Add Tender crisp patty and more Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Voluptas, numquam.</div>
+								<div class="item-dishes__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">40</div>
+									</div>
+									<div class="item-dishes__button">
+										<div class="button">
+											<a href="#">Order</a>
+											<div class="back"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="dishes__item item-dishes">
+							<div class="item-dishes__top">
+								<div class="item-dishes__img-ibg">
+									<img src="@img/dishes/02.jpg" alt="Image">
+								</div>
+								<a href="#" class="dishes__share _icon-share"></a>
+							</div>
+							<div class="item-dishes__bottom">
+								<div class="item-dishes__title">Featured Meal</div>
+								<div class="item-dishes__subtitle">Served with french fries + drink</div>
+								<div class="item-dishes__text text-small">Choice of: Coke, Fanta, Sprite, Upgrade to large
+									fries, Add whopper patty, Add Tender crisp patty and more Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Voluptas, numquam.</div>
+								<div class="item-dishes__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">32</div>
+									</div>
+									<div class="item-dishes__button">
+										<div class="button">
+											<a href="#">Order</a>
+											<div class="back"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="dishes__item item-dishes">
+							<div class="item-dishes__top">
+								<div class="item-dishes__img-ibg">
+									<img src="@img/dishes/03.jpg" alt="Image">
+								</div>
+								<a href="#" class="dishes__share _icon-share"></a>
+							</div>
+							<div class="item-dishes__bottom">
+								<div class="item-dishes__title">Featured Meal</div>
+								<div class="item-dishes__subtitle">Served with french fries + drink</div>
+								<div class="item-dishes__text text-small">Choice of: Coke, Fanta, Sprite, Upgrade to large
+									fries, Add whopper patty, Add Tender crisp patty and more Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Voluptas, numquam.</div>
+								<div class="item-dishes__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">21</div>
+									</div>
+									<div class="item-dishes__button">
+										<div class="button">
+											<a href="#">Order</a>
+											<div class="back"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="dishes__item item-dishes">
+							<div class="item-dishes__top">
+								<div class="item-dishes__img-ibg">
+									<img src="@img/dishes/04.jpg" alt="Image">
+								</div>
+								<a href="#" class="dishes__share _icon-share"></a>
+							</div>
+							<div class="item-dishes__bottom">
+								<div class="item-dishes__title">Featured Meal</div>
+								<div class="item-dishes__subtitle">Served with french fries + drink</div>
+								<div class="item-dishes__text text-small">Choice of: Coke, Fanta, Sprite, Upgrade to large
+									fries, Add whopper patty, Add Tender crisp patty and more Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Voluptas, numquam.</div>
+								<div class="item-dishes__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">12</div>
+									</div>
+									<div class="item-dishes__button">
+										<div class="button">
+											<a href="#">Order</a>
+											<div class="back"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="dishes__item item-dishes">
+							<div class="item-dishes__top">
+								<div class="item-dishes__img-ibg">
+									<img src="@img/dishes/05.jpg" alt="Image">
+								</div>
+								<a href="#" class="dishes__share _icon-share"></a>
+							</div>
+							<div class="item-dishes__bottom">
+								<div class="item-dishes__title">Featured Meal</div>
+								<div class="item-dishes__subtitle">Served with french fries + drink</div>
+								<div class="item-dishes__text text-small">Choice of: Coke, Fanta, Sprite, Upgrade to large
+									fries, Add whopper patty, Add Tender crisp patty and more Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Voluptas, numquam.</div>
+								<div class="item-dishes__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">6</div>
+									</div>
+									<div class="item-dishes__button">
+										<div class="button">
+											<a href="#">Order</a>
+											<div class="back"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="dishes__item item-dishes">
+							<div class="item-dishes__top">
+								<div class="item-dishes__img-ibg">
+									<img src="@img/dishes/06.jpg" alt="Image">
+								</div>
+								<a href="#" class="dishes__share _icon-share"></a>
+							</div>
+							<div class="item-dishes__bottom">
+								<div class="item-dishes__title">Featured Meal</div>
+								<div class="item-dishes__subtitle">Served with french fries + drink</div>
+								<div class="item-dishes__text text-small">Choice of: Coke, Fanta, Sprite, Upgrade to large
+									fries, Add whopper patty, Add Tender crisp patty and more Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Voluptas, numquam.</div>
+								<div class="item-dishes__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">15</div>
+									</div>
+									<div class="item-dishes__button">
+										<div class="button">
+											<a href="#">Order</a>
+											<div class="back"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__chefs chefs">
+				<div class="chefs__container">
+					<h2 data-watch-threshold="0.5" data-watch-once data-watch="titleAnim" class="chefs__title title">
+						<b>c</b><b>h</b><b>e</b><b>f</b><b>s</b>
+						<div data-watch-threshold="0.5" data-watch-once data-watch="titleAnim"
+							class="chefs__subtitle subtitle"><span>This</span> <span>Month's</span>
+							<span>Chefs</span>
+						</div>
+						<div class="chefs__line line"></div>
+					</h2>
+					<div class="chefs__items">
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="chefs__item item-chefs">
+							<div class="item-chefs__top">
+								<div class="item-chefs__avatar-ibg">
+									<img src="@img/chefs/Avatar.jpg" alt="Avatar">
+								</div>
+								<div class="item-chefs__person">
+									<div class="item-chefs__name">Gregory Flores</div>
+									<div class="item-chefs__work">Chef of the cold</div>
+								</div>
+							</div>
+							<div class="item-chefs__bottom">
+								<div class="item-chefs__image-ibg">
+									<img src="@img/chefs/big_img.jpg" alt="Image">
+								</div>
+								<div class="item-chefs__img-ibg">
+									<img src="@img/chefs/01.jpg" alt="Image">
+								</div>
+								<div class="item-chefs__img-ibg">
+									<img src="@img/chefs/02.jpg" alt="Image">
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="chefs__item item-chefs">
+							<div class="item-chefs__top">
+								<div class="item-chefs__avatar-ibg">
+									<img src="@img/chefs/Avatar_1.jpg" alt="Avatar">
+								</div>
+								<div class="item-chefs__person">
+									<div class="item-chefs__name">Annette Cooper</div>
+									<div class="item-chefs__work">Chef of the hot</div>
+								</div>
+							</div>
+							<div class="item-chefs__bottom">
+								<div class="item-chefs__image-ibg">
+									<img src="@img/chefs/big_img_1.jpg" alt="Image">
+								</div>
+								<div class="item-chefs__img-ibg">
+									<img src="@img/chefs/03.jpg" alt="Image">
+								</div>
+								<div class="item-chefs__img-ibg">
+									<img src="@img/chefs/04.jpg" alt="Image">
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="chefs__item item-chefs">
+							<div class="item-chefs__top">
+								<div class="item-chefs__avatar-ibg">
+									<img src="@img/chefs/Avatar_2.jpg" alt="Avatar">
+								</div>
+								<div class="item-chefs__person">
+									<div class="item-chefs__name">Greg Fox</div>
+									<div class="item-chefs__work">Сhef macro kitchen</div>
+								</div>
+							</div>
+							<div class="item-chefs__bottom">
+								<div class="item-chefs__image-ibg">
+									<img src="@img/chefs/big_img_2.jpg" alt="Image">
+								</div>
+								<div class="item-chefs__img-ibg">
+									<img src="@img/chefs/05.jpg" alt="Image">
+								</div>
+								<div class="item-chefs__img-ibg">
+									<img src="@img/chefs/06.jpg" alt="Image">
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__recipes recipes">
+				<div class="recipes__container">
+					<h2 data-watch-threshold="0.5" data-watch-once data-watch="titleAnim" class="recipes__title title">
+						<b>r</b><b>e</b><b>c</b><b>i</b><b>p</b><b>e</b><b>s</b>
+						<div data-watch-threshold="0.5" data-watch-once data-watch="titleAnim"
+							class="recipes__subtitle subtitle"><span>Recipes</span> <span>From</span>
+							<span>Our</span> <span>Chefs</span>
+						</div>
+						<div class="recipes__line line"></div>
+					</h2>
+					<div class="recipes__body">
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="recipes__left">
+							<div class="recipes__img-big-ibg">
+								<img src="@img/recipes/01.jpg" alt="Image">
+							</div>
+							<a href="#" class="recipes__link _icon-arrow"></a>
+							<div data-da=".recipes__l,767.98" class="recipes__name">breakfast</div>
+							<div data-da=".recipes__l,767.98" class="recipes__date">05 Jul 2016</div>
+							<div class="recipes__center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+							<div class="recipes__autor">Jason Keller</div>
+							<div class="recipes__info">
+
+								<div class="recipes__bottom">
+									<div class="recipes__l"></div>
+									<div class="recipes__r">
+										<div class="recipes__views _icon-eye">275</div>
+										<div class="recipes__message _icon-answer">12</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<div class="recipes__right">
+							<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="recipes__item">
+								<div class="recipes__text text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut
+									</p>
+								</div>
+								<div class="recipes__bottom">
+									<div class="recipes__l">
+										<div class="recipes__name">lunch</div>
+										<div class="recipes__date">05 Jul 2016</div>
+									</div>
+									<div class="recipes__r">
+										<div class="recipes__views _icon-eye">275</div>
+										<div class="recipes__message _icon-answer">12</div>
+									</div>
+								</div>
+								<div class="back"></div>
+							</article>
+							<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="recipes__item">
+								<div class="recipes__img-ibg">
+									<img src="@img/recipes/02.jpg" alt="Image">
+								</div>
+								<div class="recipes__text text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut
+									</p>
+								</div>
+								<div class="recipes__bottom">
+									<div class="recipes__l">
+										<div class="recipes__name">dinner</div>
+										<div class="recipes__date">05 Jul 2016</div>
+									</div>
+									<div class="recipes__r">
+										<div class="recipes__views _icon-eye">275</div>
+										<div class="recipes__message _icon-answer">12</div>
+									</div>
+								</div>
+							</article>
+							<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim" class="recipes__item">
+								<div class="recipes__text text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut
+									</p>
+								</div>
+								<div class="recipes__bottom">
+									<div class="recipes__l">
+										<div class="recipes__name">sweets</div>
+										<div class="recipes__date">05 Jul 2016</div>
+									</div>
+									<div class="recipes__r">
+										<div class="recipes__views _icon-eye">275</div>
+										<div class="recipes__message _icon-answer">12</div>
+									</div>
+								</div>
+								<div class="back"></div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__social social">
+				<div class="social__container">
+					<h2 data-watch-threshold="0.5" data-watch-once data-watch="titleAnim" class="social__title title">
+						<b>s</b><b>o</b><b>c</b><b>i</b><b>a</b><b>l</b>
+						<div data-watch-threshold="0.5" data-watch-once data-watch="titleAnim"
+							class="social__subtitle subtitle"><span>We</span> <span>social</span>
+						</div>
+						<div class="social__line line"></div>
+					</h2>
+					<div class="social__items">
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="social__item item-social">
+							<div class="item-social__top">
+								<div class="item-social__network">
+									<div class="item-social__logo _icon-twitter"></div>
+									<div class="item-social__name">Twitter</div>
+								</div>
+								<div class="item-social__button">
+									<div class="button">
+										<a href="#">follow us</a>
+										<div class="back"></div>
+									</div>
+								</div>
+							</div>
+							<div data-simplebar class="item-social__bottom">
+								<div class="item-social__date">24 Jun at 16:20 pm</div>
+								<div class="item-social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+								<div class="item-social__autor">
+									<a class="item-social__mail" href="mailto: #">@DennisFerguson</a>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="social__item item-social">
+							<div class="item-social__top">
+								<div class="item-social__network">
+									<div class="item-social__logo _icon-instagram"></div>
+									<div class="item-social__name">Instagram</div>
+								</div>
+								<div class="item-social__button">
+									<div class="button">
+										<a href="#">follow us</a>
+										<div class="back"></div>
+									</div>
+								</div>
+							</div>
+							<div data-simplebar class="item-social__gallery">
+								<div class="item-social__row">
+									<div class="item-social__img-ibg">
+										<img src="@img/social/01.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+									<div class="item-social__img-ibg">
+										<img src="@img/social/02.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+									<div class="item-social__img-ibg">
+										<img src="@img/social/03.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+								</div>
+								<div class="item-social__row">
+									<div class="item-social__img-ibg">
+										<img src="@img/social/04.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+									<div class="item-social__img-ibg">
+										<img src="@img/social/05.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+									<div class="item-social__img-ibg">
+										<img src="@img/social/06.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+								</div>
+								<div class="item-social__row">
+									<div class="item-social__img-ibg">
+										<img src="@img/social/06.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+									<div class="item-social__img-ibg">
+										<img src="@img/social/06.jpg" alt="Image">
+										<a href="#" class="item-social__link _icon-arrow"></a>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article data-watch-threshold="0.5" data-watch-once data-watch="textAnim"
+							class="social__item item-social">
+							<div class="item-social__top">
+								<div class="item-social__network">
+									<div class="item-social__logo _icon-facebook"></div>
+									<div class="item-social__name">Facebook</div>
+								</div>
+								<div class="item-social__button">
+									<div class="button">
+										<a href="#">follow us</a>
+										<div class="back"></div>
+									</div>
+								</div>
+							</div>
+							<div data-simplebar class="item-social__bottom">
+								<div class="item-social__date">26 Jun at 16:20 pm</div>
+								<div class="item-social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum
+									dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+								<div class="item-social__autor">
+									<a class="item-social__mail" href="mailto: #">@DennisFerguson</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
