@@ -1803,30 +1803,6 @@ body {
   position: relative;
 }
 
-.item-social__img-ibg::before,
-.item-social__img-ibg::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  z-index: 2;
-  background-color: rgba(37, 37, 37, 0.6784313725);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.item-social__img-ibg::before {
-  top: 0;
-}
-
-.item-social__img-ibg::after {
-  bottom: 0;
-}
-
 .item-social ._icon-arrow {
   width: 40px;
   height: 40px;
@@ -3271,6 +3247,56 @@ button.swiper-pagination-bullet {
   -ms-overflow-style: none;
 }
 
+@media (min-width: 47.99875em) {
+  .item-social__img-ibg::before,
+  .item-social__img-ibg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    background-color: rgba(37, 37, 37, 0.6784313725);
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .item-social__img-ibg::before {
+    top: 0;
+  }
+
+  .item-social__img-ibg::after {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 47.99875em) and (any-hover: hover) {
+  .item-social__img-ibg:hover::before,
+  .item-social__img-ibg:hover::after {
+    -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+    width: 0;
+  }
+
+  .item-social__img-ibg:hover::after {
+    -webkit-transition: all 0.6s ease 0.1s;
+    -o-transition: all 0.6s ease 0.1s;
+    transition: all 0.6s ease 0.1s;
+  }
+
+  .item-social__img-ibg:hover ._icon-arrow {
+    opacity: 1;
+    -webkit-transition: all 0.6s ease 0.2s;
+    -o-transition: all 0.6s ease 0.2s;
+    transition: all 0.6s ease 0.2s;
+  }
+}
+
 @media (min-width: 71.25em) {
   .button a {
     padding-top: 1.5625rem;
@@ -3320,6 +3346,10 @@ button.swiper-pagination-bullet {
 
   .favorite {
     padding-top: 10.9375rem;
+  }
+
+  .favorite {
+    padding-bottom: 15rem;
   }
 
   .favorite__title {
@@ -3542,6 +3572,10 @@ button.swiper-pagination-bullet {
     padding-top: 6.5625rem;
   }
 
+  .favorite {
+    padding-bottom: 1.25rem;
+  }
+
   .favorite__title {
     font-size: 2.25rem;
   }
@@ -3761,6 +3795,14 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .rating__body::before {
+    color: #F9AD3D;
+  }
+
+  .rating__active::before {
+    color: #F9AD3D;
+  }
+
   .recipes__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3795,8 +3837,11 @@ button.swiper-pagination-bullet {
   }
 
   .recipes__center {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     margin: 0;
-    width: 100%;
+    width: 90%;
     text-align: left;
     font-size: 1rem;
     font-weight: 400;
@@ -3814,6 +3859,16 @@ button.swiper-pagination-bullet {
 
   .recipes__info {
     width: 100%;
+  }
+
+  .item-social ._icon-arrow::before {
+    color: #23dd52;
+  }
+
+  .item-social ._icon-arrow {
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid #23dd52;
   }
 }
 
@@ -4197,6 +4252,18 @@ button.swiper-pagination-bullet {
 @supports not (padding-top: clamp( 6.5625rem , 4.8551829268rem  +  8.5365853659vw , 10.9375rem )) {
     .favorite {
       padding-top: calc(6.5625rem + 4.375 * (100vw - 20rem) / 51.25);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.25rem , -4.1158536585rem  +  26.8292682927vw , 15rem )) {
+    .favorite {
+      padding-bottom: clamp( 1.25rem , -4.1158536585rem  +  26.8292682927vw , 15rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.25rem , -4.1158536585rem  +  26.8292682927vw , 15rem )) {
+    .favorite {
+      padding-bottom: calc(1.25rem + 13.75 * (100vw - 20rem) / 51.25);
     }
 }
 
@@ -4850,28 +4917,6 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-  }
-
-  .item-social__img-ibg:hover::before,
-  .item-social__img-ibg:hover::after {
-    -webkit-transition: all 0.6s ease 0s;
-    -o-transition: all 0.6s ease 0s;
-    transition: all 0.6s ease 0s;
-    cursor: pointer;
-    width: 0;
-  }
-
-  .item-social__img-ibg:hover::after {
-    -webkit-transition: all 0.6s ease 0.1s;
-    -o-transition: all 0.6s ease 0.1s;
-    transition: all 0.6s ease 0.1s;
-  }
-
-  .item-social__img-ibg:hover ._icon-arrow {
-    opacity: 1;
-    -webkit-transition: all 0.6s ease 0.2s;
-    -o-transition: all 0.6s ease 0.2s;
-    transition: all 0.6s ease 0.2s;
   }
 
   ._icon-arrow-prev:hover,
